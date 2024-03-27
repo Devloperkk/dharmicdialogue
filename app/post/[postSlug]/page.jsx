@@ -54,10 +54,10 @@ function page({params}) {
 												</div>
 												<div class="post-share">
 													<ul>
-														<li class="facebook"><a href={'https://www.facebook.com/sharer.php?u=https://localhost:3000/post/'+item?.slug} target='_blank'><i class="fa fa-facebook"></i></a></li>
-														<li class="twitter"><a href={'https://twitter.com/intent/tweet?url=https://localhost:3000/post/'+item?.slug+'&text='+item?.title} target='_blank'><i class="fa fa-twitter"></i></a></li>
-														<li class="whatsapp"><a href={'https://api.whatsapp.com/send?text='+item?.title+' | '+item?.slug} target='_blank'><i class="fa fa-whatsapp"></i></a></li>
-														<li class="linkedin"><a href={'https://www.linkedin.com/shareArticle?url='+item?.slug} target='_blank'><i class="fa fa-linkedin"></i></a></li>
+														<li class="facebook"><a href={'https://www.facebook.com/sharer.php?u=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i class="fa fa-facebook"></i></a></li>
+														<li class="twitter"><a href={'https://twitter.com/intent/tweet?url=https://dharmicdialogue.vercel.app/post/'+item?.slug+'&text='+item?.title} target='_blank'><i class="fa fa-twitter"></i></a></li>
+														<li class="whatsapp"><a href={'https://api.whatsapp.com/send?text='+item?.title+' | https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i class="fa fa-whatsapp"></i></a></li>
+														<li class="linkedin"><a href={'https://www.linkedin.com/shareArticle?url=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i class="fa fa-linkedin"></i></a></li>
 													</ul>
 												</div>
 											</div>
