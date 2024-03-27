@@ -46,7 +46,7 @@ function page({params}) {
 												</div>
 											</div>
 											<div class="single-content animate-box">
-												<div class="dropcap column-2 animate-box">
+												<div class="dropcap column-1 animate-box" style={{fontSize:"20px"}}>
 													<Markdown>{item?.content?.markdown}</Markdown>
 												</div>
 												<div class="post-tags">
