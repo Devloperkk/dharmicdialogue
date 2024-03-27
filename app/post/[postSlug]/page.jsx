@@ -20,44 +20,49 @@ function page({params}) {
 
   return (
     <>
-        <div class="container-fluid">
-			<div class="container">
-				<div class="primary margin-15">
-					<div class="row">
-						<div class="col-md-12">
+        <div className="container-fluid">
+			<div className="container">
+				<div className="primary margin-15">
+					<div className="row">
+						<div className="col-md-12">
 
 							{postInfo?.map((item,index)=>(
 								<div key={index}>
-									<article class="section_margin">
+									<article className="section_margin">
 										
 										<figure className="alith_news_img animate-box">
 											<Image src={item?.banner?.url} width={1146} height={1509} alt=""/>
 										</figure>
 
-										<div class="post-content">
-											<div class="single-header">
-												<h2 class="alith_post_title">{item?.title}</h2>
+										<div className="post-content">
+											<div className="single-header">
+												<h2 className="alith_post_title">{item?.title}</h2>
 												<p className="alith_post_except">{item?.description}</p>
-												<div class="post_meta">
-													<a class='meta_author_avatar' href='/page-author'><img src="/author-img.png" alt="author details"/> </a>
-													<span class="meta_author_name"><a class='author' href='/page-author'> {item?.author}</a></span>
-													<span class="meta_categories"><a href={'/'+item?.category}>{item?.category}</a></span>
-													<span class="meta_date">{item?.date}</span>
+												<div className="post_meta">
+													<a className='meta_author_avatar' href='/page-author'><img src="/author-img.png" alt="author details"/> </a>
+													<span className="meta_author_name"><a className='author' href='/page-author'> {item?.author}</a></span>
+													<span className="meta_categories"><a href={'/'+item?.category}>{item?.category}</a></span>
+													<span className="meta_date">{item?.date}</span>
 												</div>
 											</div>
-											<div class="single-content animate-box">
-												<div class="dropcap column-1 animate-box" style={{fontSize:"20px"}}>
+											<div className="single-content animate-box">
+												<div className="dropcap column-1 animate-box" style={{fontSize:"20px"}}>
 													<Markdown>{item?.content?.markdown}</Markdown>
 												</div>
-												<div class="post-tags">
-													
+												<div className="post-tags">
+													<div className="post-tags-inner">
+														<a href={'/tags/'+item?.tags[0]} rel='tag'>{item?.tags[0]}</a>
+														<a href={'/tags/'+item?.tags[1]} rel='tag'>{item?.tags[1]}</a>
+														<a href={'/tags/'+item?.tags[2]} rel='tag'>{item?.tags[2]}</a>
+														<a href={'/tags/'+item?.tags[3]} rel='tag'>{item?.tags[3]}</a>
+													</div>
 												</div>
-												<div class="post-share">
+												<div className="post-share">
 													<ul>
-														<li class="facebook"><a href={'https://www.facebook.com/sharer.php?u=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i class="fa fa-facebook"></i></a></li>
-														<li class="twitter"><a href={'https://twitter.com/intent/tweet?url=https://dharmicdialogue.vercel.app/post/'+item?.slug+'&text='+item?.title} target='_blank'><i class="fa fa-twitter"></i></a></li>
-														<li class="whatsapp"><a href={'https://api.whatsapp.com/send?text='+item?.title+' | https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i class="fa fa-whatsapp"></i></a></li>
-														<li class="linkedin"><a href={'https://www.linkedin.com/shareArticle?url=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i class="fa fa-linkedin"></i></a></li>
+														<li className="facebook"><a href={'https://www.facebook.com/sharer.php?u=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i className="fa fa-facebook"></i></a></li>
+														<li className="twitter"><a href={'https://twitter.com/intent/tweet?url=https://dharmicdialogue.vercel.app/post/'+item?.slug+'&text='+item?.title} target='_blank'><i className="fa fa-twitter"></i></a></li>
+														<li className="whatsapp"><a href={'https://api.whatsapp.com/send?text='+item?.title+' | https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i className="fa fa-whatsapp"></i></a></li>
+														<li className="linkedin"><a href={'https://www.linkedin.com/shareArticle?url=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i className="fa fa-linkedin"></i></a></li>
 													</ul>
 												</div>
 											</div>

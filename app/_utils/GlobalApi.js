@@ -89,6 +89,7 @@ const getPostBySlug=async(postSlug)=>{
       author
       date
       slug
+      tags
       content {
         markdown
       }
