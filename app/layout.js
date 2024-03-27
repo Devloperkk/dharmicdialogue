@@ -1,12 +1,14 @@
 import "./assets/global.css";
 import Script from 'next/script';
+import { Metadata } from 'next';
 import MainNavbar from "./_components/MainNavbar";
 import MainFooter from "./_components/MainFooter";
 import MainCategories from "./_components/MainCategories";
 
 export const metadata = {
-  title: "Dharmic Dialogue",
+  title: 'Dharmic Dialogue',
   description: "The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter.",
+
 };
 
 export default function RootLayout({ children }) {
@@ -14,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico"></link>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <link href="/js/popup.css" rel="stylesheet"></link>
         <link href="https://hewo-html.netlify.app/assets/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="https://hewo-html.netlify.app/assets/css/owl.theme.default.css" rel="stylesheet" type="text/css"/>

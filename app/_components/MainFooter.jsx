@@ -10,7 +10,7 @@ function MainFooter() {
 					<h1 className="logo"><a href='/'>DHARMIC DIALOGUE</a></h1>
 					<div className="tagline social">
 						<ul>
-							<li className="youtube"><a target='_blank' href="https://www.youtube.com/@DharmicDialogue?sub_confirmation=1" aria-label='youtube'><i className="fa fa-facebook"></i></a></li>
+							<li className="youtube"><a target='_blank' href="https://www.youtube.com/@DharmicDialogue?sub_confirmation=1" aria-label='youtube'><i className="fa fa-youtube"></i></a></li>
 							<li className="twitter"><a target='_blank' href="https://twitter.com/dharmicdialogue" aria-label='twitter'><i className="fa fa-twitter"></i></a></li>
 							<li className="instagram"><a target='_blank' href="https://www.instagram.com/dharmicdialogue/" aria-label='instagram'><i className="fa fa-instagram"></i></a></li>
 						</ul>
