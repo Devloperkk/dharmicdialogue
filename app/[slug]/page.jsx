@@ -29,7 +29,7 @@ function Category({params}) {
                                     {categoryPost?.length>0? categoryPost.map((item,index)=>(
                                     <div key={index}>
                                         <article className="col-md-12 animate-box section_margin">
-                                            <a href={'/post/'+'/post/'+item?.slug}>
+                                            <a href={'/post/'+item?.slug}>
                                                 <div className="wrap">
                                                     <figure className="alith_news_img">
                                                         <span className="post_meta_categories_label">{item?.category}</span>
