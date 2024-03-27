@@ -29,7 +29,7 @@ function MainNavbar() {
 									<i className="fa fa-search"></i><span>SEARCH</span>
 								</div>
 								<div className="top-search-form">
-									<form action="/search/" className="search-form" method="get" role="search">
+									<form action="/search/a" className="search-form" method="get" role="search">
 										<label>
 											<span className="screen-reader-text">Search for:</span>
 											<input type="search" name="search" placeholder="Search …" className="search-field"/>
