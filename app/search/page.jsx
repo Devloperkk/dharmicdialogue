@@ -3,7 +3,7 @@ import { useSearchParams } from 'next/navigation'
 import React from 'react'
 import Image from 'next/image';
 import { useEffect, useState } from 'react'
-import GlobalApi from './_utils/GlobalApi'
+import GlobalApi from '../_utils/GlobalApi'
 
 function search() {
     const searchParams = useSearchParams()
