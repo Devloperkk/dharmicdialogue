@@ -7,7 +7,7 @@ import GlobalApi from '../_utils/GlobalApi'
 
 function search() {
     const searchParams = useSearchParams()
-    const search = searchParams.get('s')
+    const search = searchParams.get('search')
 
     const [searchPost,setSearchPost]=useState([]);
     useEffect(()=>{

@@ -32,7 +32,7 @@ function MainNavbar() {
 									<form action="/search/" className="search-form" method="get" role="search">
 										<label>
 											<span className="screen-reader-text">Search for:</span>
-											<input type="search" name="s" placeholder="Search …" className="search-field"/>
+											<input type="search" name="search" placeholder="Search …" className="search-field"/>
 										</label>
 										<input type="submit" value="Search" className="search-submit"/>
 									</form>
