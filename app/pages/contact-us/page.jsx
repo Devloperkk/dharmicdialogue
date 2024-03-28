@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 
-export function ContactUs() {
+function ContactUs() {
 
     async function handleSubmit(e) {
         e.preventDefault();
