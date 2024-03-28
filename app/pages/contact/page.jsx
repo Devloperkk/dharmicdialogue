@@ -40,7 +40,6 @@ export function Contact() {
                                                             <label htmlFor="Comment">Message</label>
                                                             <textarea name="message" required rows="4" placeholder="Enter Message"></textarea>
                                                         </p>
-                                                        <div class="h-captcha" data-captcha="true"></div>
 													    <p className="form-submit">
                                                             <input type="submit" name="submit" id="submit" className="submit" value="Send Message"/> 
                                                         </p>
