@@ -54,6 +54,12 @@ NOTE
 .dropcap a{
 	color:#dd4b39;
 }
+.dropcap img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
 .skeleton {
 	animation: skeleton-loading 1s linear infinite alternate;
   }
@@ -126,7 +132,7 @@ a.link-active,
 	text-decoration: none;
 }
 ::selection {
-	background: #000;
+	background: #e5633f;
 	/* WebKit/Blink Browsers */
 	color: #fff;
 }
@@ -1599,25 +1605,26 @@ ul.page-numbers li a.prev::after {
 	padding: 0;
 }
 blockquote {
-	border: 1px dashed #000;
+	border-left: 4px solid #dd4b39;
 	display: block;
 	font-size: 1.2em;
 	line-height: 1.5;
 	margin: 30px auto;
-	max-width: 500px;
-	padding: 60px 20px 20px;
+	/* max-width: 500px; */
+	padding: 30px 20px 20px;
 	position: relative;
-	text-align: center;
+	text-align: justify;
+	/* text-align: center; */
 }
 blockquote::before {
-	content: "“";
+	content: "";
 	font-family: georgia, serif;
 	font-size: 60px;
 	left: 50%;
 	line-height: 1;
 	margin-left: -20px;
 	position: absolute;
-	top: 18px;
+	top: 8px;
 	width: 40px;
 	z-index: 20;
 }
