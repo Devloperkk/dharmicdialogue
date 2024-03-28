@@ -46,7 +46,7 @@ function MainNavbar() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-12 header">
-              <h1 className="logo"><a href='/'>DHARMIC DIALOGUE</a></h1>
+              <h1 className="logo"><a href='/'>DHĀRMIC DIALOGUE</a></h1>
               <p className="tagline">TOWARDS THE TRUTH</p>
             </div>
           </div>
@@ -64,9 +64,9 @@ function MainNavbar() {
                   <li><a href='/Culture'>Culture</a></li>
                   <li><a href='/Opinion'>Opinion</a></li>
                   <li><a href='/History'>History</a></li>
-                  <li class="menu-item-has-children">
+                  <li className="menu-item-has-children">
                     <a href="#">More</a>
-										<ul class="sub-menu">
+										<ul className="sub-menu">
                       <li><a href='/Architecture'>Architecture</a></li>
                       <li><a href="/Ganit">Ganit</a></li>
                       <li><a href="/Yoga">Yoga</a></li>

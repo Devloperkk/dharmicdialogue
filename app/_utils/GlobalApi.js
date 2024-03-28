@@ -11,6 +11,7 @@ const getAllPostList=async()=>{
           description
           category
           author
+          authorSlug
           date
           slug
           tags
@@ -35,6 +36,7 @@ const getCarouselPostList=async()=>{
         description
         category
         author
+        authorSlug
         date
         slug
         banner {
@@ -60,6 +62,7 @@ const getCategoryPostList=async(slug)=>{
         description
         category
         author
+        authorSlug
         date
         slug
         banner {
@@ -85,6 +88,7 @@ const getPostBySlug=async(postSlug)=>{
       description
       category
       author
+      authorSlug
       date
       slug
       tags
@@ -131,6 +135,7 @@ const getPostBySearch=async(searchQuery)=>{
       description
       category
       author
+      authorSlug
       date
       slug
       banner {
@@ -160,6 +165,53 @@ const getAllTagList=async()=>{
 }
 
 
+
+
+const getAuthorPostList=async(authorSlug)=>{
+  const query=gql`
+  query MyQuery {
+      blogposts(where: {authorSlug: "`+authorSlug+`"}) {
+        id
+        title
+        description
+        category
+        author
+        authorSlug
+        date
+        slug
+        banner {
+          url
+        }
+      }
+      authorDetails(where: {authorSlug: "`+authorSlug+`"}) {
+        id
+        authorName
+        authorSlug
+        authorDescription
+        authorPicture {
+          id
+          url
+        }
+        instagramHandel
+        linkedinHandel
+        twitterHandel
+      }
+    }
+  `
+  const result=await request(MASTER_URL,query);
+  return result;
+}
+
+
+
+
+
+
+
+
+
+
+
 export default{
     getAllPostList,
     getCarouselPostList,
@@ -167,5 +219,6 @@ export default{
     getPostBySlug,
     getPageBySlug,
     getPostBySearch,
-    getAllTagList
+    getAllTagList,
+    getAuthorPostList
 }

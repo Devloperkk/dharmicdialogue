@@ -12,7 +12,6 @@ function MainCategories() {
 
 	const getAllPosts=()=>{
 		GlobalApi.getAllTagList().then(resp=>{
-			console.log(resp)
 			setPostList(resp?.blogposts)
 		})
 	}
@@ -46,7 +45,7 @@ function MainCategories() {
 								<li><a href="/pages/privacy-policy" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; Privacy Policy</a></li>
 								<li><a href="/pages/terms-and-conditions" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; T&C</a></li>
 								<li><a href="/pages/disclaimer" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; Disclaimer</a></li>
-								<li><a href="/pages/contact-us" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; Contact Us</a></li>
+								<li><a href="/contact" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; Contact Us</a></li>
 								<li><a href="/pages/newsletter" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; Newsletter</a></li>
 								<li><a href="/pages/about-us" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; About Us</a></li>
 							</ul>

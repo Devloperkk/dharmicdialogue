@@ -29,8 +29,8 @@ function RecentPosts() {
 				</div>
 				<h3 className="alith_post_title">{item?.title}</h3>
 				<div className="post_meta">
-					<a className='meta_author_avatar' href='/page-author'><Image src="/author-img.png" width={10} height={10} alt="author-details"/> </a>
-					<span className="meta_author_name"><a className='author' href='/page-author'> {item?.author}</a></span>
+					<a className='meta_author_avatar' href={'/author/'+item?.authorSlug}><Image src="/author-img.png" width={10} height={10} alt="author-details"/> </a>
+					<span className="meta_author_name"><a className='author' href={'/author/'+item?.authorSlug}> {item?.author}</a></span>
 					<span className="meta_date">{item?.date}</span>
 				</div>
 				<p className="alith_post_except">{item?.description}</p>

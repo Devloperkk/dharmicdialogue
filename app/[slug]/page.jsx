@@ -61,8 +61,8 @@ function Category({params}) {
                                                 </div>
                                                 <h3 className="alith_post_title"><a href={'/post/'+item?.slug}>{item?.title}</a></h3>
                                                 <div className="post_meta">
-                                                    <a className='meta_author_avatar' href='/page-author'><img src="/author-img.png" alt="author details"/></a>
-                                                    <span className="meta_author_name"><a className='author' href='/page-author'>{item?.author}</a></span>
+                                                    <a className='meta_author_avatar' href={'/author/'+item?.authorSlug}><img src="/author-img.png" alt="author details"/></a>
+                                                    <span className="meta_author_name"><a className='author' href={'/author/'+item?.authorSlug}>{item?.author}</a></span>
                                                     <span className="meta_date">{item?.date}</span>
                                                 </div>
                                                 <p className="alith_post_except">{item?.description}</p>

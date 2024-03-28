@@ -1,63 +1,61 @@
 'use client'
-import { useSearchParams } from 'next/navigation'
 import React from 'react'
 import Image from 'next/image';
 import { useEffect, useState } from 'react'
 import GlobalApi from '../../_utils/GlobalApi'
 
-function search() {
-    const searchParams = useSearchParams()
-    const search = searchParams.get('search')
+function authorPage({params}) {
 
-    const [searchPost,setSearchPost]=useState([]);
+    const [authorPost,setAuthorPost]=useState([]);
+    const [authorInfo,setAuthorInfo]=useState([]);
     useEffect(()=>{
-        search&&getPostListBySearch()
-    },[search])
-    const getPostListBySearch=()=>{
-        GlobalApi.getPostBySearch(search).then(resp=>{
+        params&&getPostByAuthor()
+    },[params])
+
+    const getPostByAuthor=()=>{
+        GlobalApi.getAuthorPostList(params?.authorSlug).then(resp=>{
             console.log(resp)
-            setSearchPost(resp?.blogposts)
+            setAuthorPost(resp?.blogposts)
+            setAuthorInfo(resp?.authorDetails)
         })
     }
 
-    return (
+
+
+  return (
     <>
         <div className="container-fluid">
 			<div className="container animate-box">
 				<div className="row">
 					<div className="archive-header">
-						<div className="archive-title"><h2>Search Results for: <em>{search}</em></h2></div>
+						<div className="post-author-info">
+							{authorInfo.map((item,index) => (
+								<div key={index}>
+									<Image className="section_margin_20" src={item?.authorPicture?.url} width={150} height={150} alt="author details"/>
+									<div className="archive-title"><h2>{item?.authorName}</h2></div>
+									<p>{item?.authorDescription}</p>
+									<ul>
+										<li><a href={item?.instagramHandel} aria-label='author-social-link'><i className="fa fa-instagram"></i></a></li>
+										<li><a href={item?.twitterHandel} aria-label='author-social-link'><i className="fa fa-twitter"></i></a></li>
+										<li><a href={item?.linkedinHandel} aria-label='author-social-link'><i className="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-        <title>{'Search Results for '+search+' | Dharmic Dialogue'}</title>
-		<meta name="description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
-        <link href="/banner.png" rel="image_src"/>
-		<meta property="og:type" content="search" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="@dharmicdialogue" />
-		<meta name="twitter:creator" content="@dharmicdialogue"/>
-		<meta name="twitter:url" content={'https://dharmicdialogue.vercel.app/search/a?search='+search} />
-		<meta name="twitter:title" content='Search Results | Dharmic Dialogue' />
-		<meta name="twitter:description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
-        <meta name="twitter:image" content="/banner.png" />
-		<meta name="twitter:image:src" content="/banner.png" />
-		<meta property="og:url" content={'https://dharmicdialogue.vercel.app/search/a?search='+search} />
-		<meta property="og:title" content="Search Results | Dharmic Dialogue" />
-		<meta property="og:description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
-        <meta property="og:image" content="/banner.png" />
-
-
-
-        <div className="container-fluid">
+    
+	
+		<div className="container-fluid">
 			<div className="container">
 				<div className="primary margin-15">
                     <div className="row">
                         <div className="col-md-8">
                             <div className="post_list post_list_style_1">
 
-                                {searchPost.map((item,index)=>(
+                                {authorPost.map((item,index)=>(
                                     <div key={index}>
                                         <a href={'/post/'+item?.slug}>
                                             <article className="row section_margin animate-box">
@@ -86,8 +84,13 @@ function search() {
                 </div>
             </div>
         </div>
+    
+    
+    
+    
+    
     </>
   )
 }
 
-export default search
+export default authorPage

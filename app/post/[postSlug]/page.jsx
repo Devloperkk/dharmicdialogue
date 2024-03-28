@@ -58,8 +58,8 @@ function page({params}) {
 												<h2 className="alith_post_title">{item?.title}</h2>
 												<p className="alith_post_except">{item?.description}</p>
 												<div className="post_meta">
-													<a className='meta_author_avatar' href='/page-author'><img src="/author-img.png" alt="author details"/> </a>
-													<span className="meta_author_name"><a className='author' href='/page-author'> {item?.author}</a></span>
+													<a className='meta_author_avatar' href={'/author/'+item?.authorSlug}><img src="/author-img.png" alt="author details"/> </a>
+													<span className="meta_author_name"><a className='author' href={'/author/'+item?.authorSlug}> {item?.author}</a></span>
 													<span className="meta_categories"><a href={'/'+item?.category}>{item?.category}</a></span>
 													<span className="meta_date">{item?.date}</span>
 												</div>
