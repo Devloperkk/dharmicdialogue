@@ -51,7 +51,9 @@ NOTE
 
 
 
-
+.dropcap a{
+	color:#dd4b39;
+}
 .skeleton {
 	animation: skeleton-loading 1s linear infinite alternate;
   }
