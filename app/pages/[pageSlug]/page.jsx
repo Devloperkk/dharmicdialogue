@@ -20,24 +20,24 @@ function page({params}) {
 
   return (
     <>
-    <div class="container-fluid">
-			<div class="container">
-				<div class="primary margin-15">
-					<div class="row">
-						<div class="col-md-12">
+    <div className="container-fluid">
+			<div className="container">
+				<div className="primary margin-15">
+					<div className="row">
+						<div className="col-md-12">
 
 							{pageInfo?.map((item,index)=>(
 								<div key={index}>
-									<article class="section_margin">
-										<div class="post-content">
-										<div class="single-header">
-											<h3 class="alith_post_title">{item?.name}</h3>
+									<article className="section_margin">
+										<div className="post-content">
+										<div className="single-header">
+											<h3 className="alith_post_title">{item?.name}</h3>
 										</div>
-											<div class="single-content animate-box">
-												<div class="dropcap column-2 animate-box">
+											<div className="single-content animate-box">
+												<div className="dropcap mx-md-5 column-1 animate-box" style={{fontSize:"20px"}}>
 													<Markdown>{item?.content?.markdown}</Markdown>
 												</div>
-												<div class="post-tags">
+												<div className="post-tags">
 													
 												</div>
 											</div>
