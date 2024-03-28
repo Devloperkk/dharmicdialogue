@@ -1,6 +1,7 @@
 import "./assets/global.css";
 import Script from 'next/script';
-import { Metadata } from 'next';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import MainNavbar from "./_components/MainNavbar";
 import MainFooter from "./_components/MainFooter";
 import MainCategories from "./_components/MainCategories";
@@ -34,6 +35,8 @@ export default function RootLayout({ children }) {
         <div id="wrapper">
           <MainNavbar/>
           {children}
+          <Analytics />
+          <SpeedInsights />
           <MainCategories/>
           <MainFooter/>
         </div>
