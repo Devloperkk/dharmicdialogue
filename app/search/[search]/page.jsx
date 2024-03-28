@@ -31,9 +31,9 @@ function search() {
 				</div>
 			</div>
 		</div>
-        <title>Search Results | Dharmic Dialogue</title>
+        <title>{'Search Results for '+search+' | Dharmic Dialogue'}</title>
 		<meta name="description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
-        <link href={item[1]?.banner?.url} rel="image_src"/>
+        <link href="/banner.png" rel="image_src"/>
 		<meta property="og:type" content="search" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@dharmicdialogue" />
@@ -41,12 +41,12 @@ function search() {
 		<meta name="twitter:url" content={'https://dharmicdialogue.vercel.app/search/a?search='+search} />
 		<meta name="twitter:title" content='Search Results | Dharmic Dialogue' />
 		<meta name="twitter:description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
-        <meta name="twitter:image" content={item?.banner?.url} />
-		<meta name="twitter:image:src" content={item?.banner?.url} />
+        <meta name="twitter:image" content="/banner.png" />
+		<meta name="twitter:image:src" content="/banner.png" />
 		<meta property="og:url" content={'https://dharmicdialogue.vercel.app/search/a?search='+search} />
 		<meta property="og:title" content="Search Results | Dharmic Dialogue" />
 		<meta property="og:description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
-        <meta property="og:image" content={item[1]?.banner?.url} />
+        <meta property="og:image" content="/banner.png" />
 
 
 
