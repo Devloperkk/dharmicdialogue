@@ -64,7 +64,15 @@ function MainNavbar() {
                   <li><a href='/Culture'>Culture</a></li>
                   <li><a href='/Opinion'>Opinion</a></li>
                   <li><a href='/History'>History</a></li>
-                  <li><a href='/Architecture'>Architecture</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#">More</a>
+										<ul class="sub-menu">
+                      <li><a href='/Architecture'>Architecture</a></li>
+                      <li><a href="/Ganit">Ganit</a></li>
+                      <li><a href="/Yoga">Yoga</a></li>
+                      <li><a href="/Auyrveda">Ayurveda</a></li>
+										</ul>
+									</li>
                 </ul>
               </div>
             </div>
