@@ -92,6 +92,7 @@ const getPostBySlug=async(postSlug)=>{
       date
       slug
       tags
+      metaData
       content {
         markdown
       }

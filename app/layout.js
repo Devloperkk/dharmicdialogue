@@ -13,6 +13,9 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="robots" content="index,follow" />
         <meta name="google" content="notranslate"/>
+        
+        <meta name="twitter:site" content="@dharmicdialogue" />
+										<meta name="twitter:creator" content="@dharmicdialogue"/>
         <meta name="Publisher" content="DHARMIC DIALOGUE" />
         <meta name="Owner" content="Abhishek" />
         <meta name="Developer" content="Kaushalendra" />
