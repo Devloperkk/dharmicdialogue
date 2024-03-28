@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 
-export function Contact() {
+export function ContactUs() {
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -81,4 +81,4 @@ export function Contact() {
   );
 }
 
-export default Contact
+export default ContactUs;
