@@ -13,9 +13,7 @@ const getAllPostList=async()=>{
           author
           date
           slug
-          content {
-            html
-          }
+          tags
           banner {
             url
           }
@@ -145,11 +143,28 @@ const getPostBySearch=async(searchQuery)=>{
 }
 
 
+
+const getAllTagList=async()=>{
+  const query=gql`
+  query MyQuery {
+      blogposts(orderBy: id_DESC) {
+        id
+        title
+        tags
+      }
+    }
+  `
+  const result=await request(MASTER_URL,query);
+  return result;
+}
+
+
 export default{
     getAllPostList,
     getCarouselPostList,
     getCategoryPostList,
     getPostBySlug,
     getPageBySlug,
-    getPostBySearch
+    getPostBySearch,
+    getAllTagList
 }

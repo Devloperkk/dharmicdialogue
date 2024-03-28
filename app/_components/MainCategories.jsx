@@ -1,6 +1,22 @@
+'use client'
 import React from 'react'
+import GlobalApi from '/app/_utils/GlobalApi'
+import { useEffect, useState } from 'react'
 
 function MainCategories() {
+	
+	const [postList,setPostList]=useState([]);
+	useEffect(()=>{
+		getAllPosts();
+	},[]);
+
+	const getAllPosts=()=>{
+		GlobalApi.getAllTagList().then(resp=>{
+			console.log(resp)
+			setPostList(resp?.blogposts)
+		})
+	}
+
   return (
     <>
     <div className="container-fluid">
@@ -33,6 +49,20 @@ function MainCategories() {
 								<li><a href="/pages/contact-us" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; Contact Us</a></li>
 								<li><a href="/pages/newsletter" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; Newsletter</a></li>
 								<li><a href="/pages/about-us" className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; About Us</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						<div className="sidebar-widget">
+							<div className="widget-title-cover"><h4 className="widget-title"><span>Recent Tags</span></h4></div>
+							<ul className="bottom_menu">
+								{postList.map((item,index)=>(
+								<div key={index}>
+									<li><a href={'/search/a?search='+item?.tags[0]} className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; {item?.tags[0]}</a></li>
+									<li><a href={'/search/a?search='+item?.tags[1]} className=""><i className="fa fa-angle-right"></i>&nbsp;&nbsp; {item?.tags[1]}</a></li>
+								</div>
+								))}
 							</ul>
 						</div>
 					</div>

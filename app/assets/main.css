@@ -60,6 +60,15 @@ NOTE
 	margin-right: auto;
 	width: 70%;
 }
+.dropcap{
+	padding-left: 10rem;
+}
+@media only screen and (max-width: 992px) {
+	.dropcap {
+	  padding-left: 0;
+	  padding: 0;
+	}
+  }
 .skeleton {
 	animation: skeleton-loading 1s linear infinite alternate;
   }
@@ -749,8 +758,9 @@ text-transform: uppercase;
 	margin-bottom: 15px;
 }
 .post_meta {
-	font-size: 80%;
-	font-weight: 300;
+	font-size: 85%;
+	font-weight: 500;
+	font-family: 'Playfair Display', serif;
 }
 .post_meta span {
 	color: #888;

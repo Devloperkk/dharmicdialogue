@@ -34,7 +34,7 @@ function page({params}) {
 											<h3 className="alith_post_title">{item?.name}</h3>
 										</div>
 											<div className="single-content animate-box">
-												<div className="dropcap mx-md-5 column-1 animate-box" style={{fontSize:"20px"}}>
+												<div className="dropcap column-1 animate-box" style={{fontSize:"20px"}}>
 													<Markdown>{item?.content?.markdown}</Markdown>
 												</div>
 												<div className="post-tags">
