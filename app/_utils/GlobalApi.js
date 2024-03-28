@@ -110,6 +110,7 @@ const getPageBySlug=async(pageSlug)=>{
       id
       name
       slug
+      description
       content {
         markdown
       }

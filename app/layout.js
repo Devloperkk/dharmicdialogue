@@ -5,16 +5,22 @@ import MainNavbar from "./_components/MainNavbar";
 import MainFooter from "./_components/MainFooter";
 import MainCategories from "./_components/MainCategories";
 
-export const metadata = {
-  title: 'Dharmic Dialogue',
-  description: "The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter.",
-
-};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="robots" content="index,follow" />
+        <meta name="google" content="notranslate"/>
+        <meta name="Publisher" content="DHARMIC DIALOGUE" />
+        <meta name="Owner" content="Abhishek" />
+        <meta name="Developer" content="Kaushalendra" />
+        <meta name="msnbot" content="index,follow"/>
+        <meta name="googlebot" content="index,follow" />
+        <meta name="Twitterbot" content="index,follow" />
+        <meta name="Rating" content="General" />
+        <meta name="allow-search" content="yes"/>
+        <meta property="og:site_name" content="dharmicdialogue.vercel.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <link href="/js/popup.css" rel="stylesheet"></link>

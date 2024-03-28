@@ -29,7 +29,26 @@ function page({params}) {
 							{postInfo?.map((item,index)=>(
 								<div key={index}>
 									<article className="section_margin">
+										{/* meta data */}
+										<title>{item?.title}</title>
+										<meta name="description" content={item?.description} />
+										<link href={item?.banner?.url} rel="image_src"/>
+										<meta property="og:type" content="article" />
+										<meta name="twitter:card" content="summary_large_image" />
+										<meta name="twitter:site" content="@dharmicdialogue" />
+										<meta name="twitter:creator" content="@dharmicdialogue"/>
+										<meta name="twitter:url" content={'https://dharmicdialogue.vercel.app/post/'+item?.slug} />
+										<meta name="twitter:title" content={item?.title} />
+										<meta name="twitter:description" content={item?.description} />
+										<meta name="twitter:image" content={item?.banner?.url} />
+										<meta name="twitter:image:src" content={item?.banner?.url} />
+										<meta property="og:url" content={'https://dharmicdialogue.vercel.app/post/'+item?.slug} />
+										<meta property="og:title" content={item?.title} />
+										<meta property="og:description" content={item?.description} />
+										<meta property="og:image" content={item?.banner?.url} />
 										
+
+
 										<figure className="alith_news_img animate-box">
 											<Image src={item?.banner?.url} width={1146} height={1509} alt=""/>
 										</figure>
