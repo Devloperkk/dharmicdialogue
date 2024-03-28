@@ -13,8 +13,6 @@ export function page() {
 									<div className="single-header">
 										<h3 className="alith_post_title">Contact us</h3>
 									</div>
-                                    <title>Contact Us | Dharmic Dialogue</title>
-                                    <meta name="description" content="Contact Us | Dharmic Dialogue" />
                                     <div className="single-content animate-box">
 
 										<div className="column-1 animate-box">
