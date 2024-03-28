@@ -47,9 +47,6 @@ export function Contact() {
 													<h2>Get in touch</h2>
 													<form onSubmit={handleSubmit} id="form" className="comment-form">
 
-                                                        <input type="hidden" name="access_key" value=""/>
-                                                        <input type="hidden" name="subject" value="New Form Submission from Your Dharmic Dialogue Website"/>
-                                                        <input type="checkbox" name="botcheck" id="" style={{display: "none"}}/>
                                                         <div className="row">
                                                             <div className="comment-form-author col-sm-12 col-md-6">
                                                                 <label htmlFor="name">Name (*)</label>
@@ -64,11 +61,9 @@ export function Contact() {
                                                             <label htmlFor="message">Message</label>
                                                             <textarea name="message" required rows="4" placeholder="Enter Message"></textarea>
                                                         </p>
-                                                        <div class="h-captcha" data-captcha="true"></div>
 													    <p className="form-submit">
-                                                            <input type="submit" name="submit" id="submit" className="submit" value="Send Message"/> 
+                                                            <button type="submit" id="submit" className="submit">Send Message</button>
                                                         </p>
-                                                        <div id="result"></div>
 												    </form>
 												</div>
                                             </div>
