@@ -154,7 +154,7 @@ const getPostBySearch=async(searchQuery)=>{
 const getAllTagList=async()=>{
   const query=gql`
   query MyQuery {
-      blogposts(orderBy: id_DESC) {
+      blogposts(orderBy: id_DESC, first: 4) {
         id
         title
         tags
