@@ -7,7 +7,7 @@ function MainFooter() {
 		<div className="container">
 			<div className="row">
 				<div className="col-12 col-md-12 bottom-logo">
-					<h1 className="logo"><a href='/'>DHARMIC DIALOGUE</a></h1>
+					<h1 className="logo"><a href='/'>DHĀRMIC DIALOGUE</a></h1>
 					<div className="tagline social">
 						<ul>
 							<li className="youtube"><a target='_blank' href="https://www.youtube.com/@DharmicDialogue?sub_confirmation=1" aria-label='youtube'><i className="fa fa-youtube"></i></a></li>
