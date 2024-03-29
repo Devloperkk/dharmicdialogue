@@ -71,6 +71,7 @@ function MainNavbar() {
                       <li><a href="/Ganit">Ganit</a></li>
                       <li><a href="/Yoga">Yoga</a></li>
                       <li><a href="/Auyrveda">Ayurveda</a></li>
+                      <li><a href="/pages/about-us">About</a></li>
 										</ul>
 									</li>
                 </ul>
