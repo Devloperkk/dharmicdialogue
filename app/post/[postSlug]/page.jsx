@@ -31,7 +31,7 @@ function page({params}) {
 								<div key={index}>
 									<article className="section_margin">
 										{/* meta data */}
-										<Head>
+										
 										<title>{item?.title}</title>
 										<meta name="description" content={item?.description} />
 										<link href={item?.banner?.url} rel="image_src"/>
@@ -48,7 +48,7 @@ function page({params}) {
 										<meta property="og:title" content={item?.title} />
 										<meta property="og:description" content={item?.description} />
 										<meta property="og:image" content={item?.banner?.url} />
-										</Head>
+										
 										{/* <div dangerouslySetInnerHTML={{ __html: item?.metaData }}></div> */}
 										
 
