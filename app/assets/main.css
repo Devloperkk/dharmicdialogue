@@ -1520,8 +1520,8 @@ ul.page-numbers li a.prev::after {
 	background: #f1f1f1 none repeat scroll 0 0;
 	font-size: 120%;
 	font-weight: 500;
-	padding: 20px;
-	text-align: left;
+	padding: 20px 0 20px;
+	text-align: center;
 }
 .single-more-articles {
     background: #fff none repeat scroll 0 0;

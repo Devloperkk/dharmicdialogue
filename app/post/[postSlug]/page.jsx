@@ -65,7 +65,7 @@ function page({params}) {
 										<div className="post-content">
 											<div className="single-header">
 												<h2 className="alith_post_title">{item?.title}</h2>
-												<p className="alith_post_except">{item?.description}</p>
+												<p className="alith_post_except center">{item?.description}</p>
 												<div className="post_meta">
 													<a className='meta_author_avatar' href={'/author/'+item?.authorSlug}><img src="/author-img.png" alt="author details"/> </a>
 													<span className="meta_author_name"><a className='author' href={'/author/'+item?.authorSlug}> {item?.author}</a></span>
