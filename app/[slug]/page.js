@@ -18,7 +18,8 @@ function Category({params}) {
 
         })
     }
-    
+
+
   return (
     <>
         <div className="container-fluid">
