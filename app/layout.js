@@ -12,9 +12,14 @@ export const metadata = {
     template: "%s - Dharmic Dialogue",
   },
   description: "The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter.",
+  images: "/banner.png",
   twitter: {
     card: "summary_large_image",
-  }
+    images: "/banner.png"
+  },
+  openGraph: {
+    images: '/banner.png',
+  },
 }
 
 export default function RootLayout({ children }) {
