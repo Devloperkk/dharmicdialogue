@@ -2,7 +2,8 @@
 import React from 'react'
 import Image from 'next/image';
 import { useEffect, useState } from 'react'
-import GlobalApi from '../_utils/GlobalApi'
+import GlobalApi from '../_utils/GlobalApi';
+
 
 function Category({params}) {
 
@@ -14,8 +15,10 @@ function Category({params}) {
     const getPostByCategory=()=>{
         GlobalApi.getCategoryPostList(params?.slug).then(resp=>{
             setCategoryPost(resp?.blogposts)
+
         })
     }
+    
   return (
     <>
         <div className="container-fluid">
@@ -30,7 +33,7 @@ function Category({params}) {
                                     <div key={index}>
                                         <article className="col-md-12 animate-box section_margin">
 
-                                        <title>{item?.category+' | Dharmic Dialogue'}</title>
+                                        {/* <title>{item?.category+' | Dharmic Dialogue'}</title>
 										<meta name="description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
                                         <link href="/banner.png" rel="image_src"/>
 										<meta property="og:type" content="article" />
@@ -45,7 +48,7 @@ function Category({params}) {
 										<meta property="og:url" content={'https://dharmicdialogue.vercel.app/post/'+item?.slug} />
 										<meta property="og:title" content={item?.category+'| Dharmic Dialogue'} />
 										<meta property="og:description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
-										<meta property="og:image" content="/banner.png" />
+										<meta property="og:image" content="/banner.png" /> */}
 
 
 
