@@ -64,6 +64,7 @@ function MainNavbar() {
                   <li><a href='/Culture'>Culture</a></li>
                   <li><a href='/Opinion'>Opinion</a></li>
                   <li><a href='/History'>History</a></li>
+                  <li><a href='/Politics'>Politics</a></li>
                   <li className="menu-item-has-children">
                     <a href="#">More</a>
 										<ul className="sub-menu">
