@@ -79,10 +79,10 @@ function page({params}) {
 												</div>
 												<div className="post-tags">
 													<div className="post-tags-inner">
-														<a href={'/tags/'+item?.tags[0]} rel='tag'>{item?.tags[0]}</a>
-														<a href={'/tags/'+item?.tags[1]} rel='tag'>{item?.tags[1]}</a>
-														<a href={'/tags/'+item?.tags[2]} rel='tag'>{item?.tags[2]}</a>
-														<a href={'/tags/'+item?.tags[3]} rel='tag'>{item?.tags[3]}</a>
+														<a href={'/search/a='+item?.tags[0]} rel='tag'>{item?.tags[0]}</a>
+														<a href={'/search/a='+item?.tags[1]} rel='tag'>{item?.tags[1]}</a>
+														<a href={'/search/a='+item?.tags[2]} rel='tag'>{item?.tags[2]}</a>
+														<a href={'/search/a='+item?.tags[3]} rel='tag'>{item?.tags[3]}</a>
 													</div>
 												</div>
 												<div className="post-share">
