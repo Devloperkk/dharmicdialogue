@@ -37,12 +37,12 @@ function page({params}) {
 										<meta name="twitter:card" content="summary_large_image" />
 										<meta name="twitter:site" content="@dharmicdialogue" />
 										<meta name="twitter:creator" content="@dharmicdialogue"/>
-										<meta name="twitter:url" content={'https://dharmicdialogue.vercel.app/pages/'+item?.slug} />
+										<meta name="twitter:url" content={'https://dharmicdialogue.com/pages/'+item?.slug} />
 										<meta name="twitter:title" content={item?.name} />
 										<meta name="twitter:description" content={item?.description} />
 										<meta name="twitter:image" content="/banner.png" />
 										<meta name="twitter:image:src" content="/banner.png" />
-										<meta property="og:url" content={'https://dharmicdialogue.vercel.app/pages/'+item?.slug} />
+										<meta property="og:url" content={'https://dharmicdialogue.com/pages/'+item?.slug} />
 										<meta property="og:title" content={item?.name} />
 										<meta property="og:description" content={item?.description} />
 										<meta property="og:image" content="/banner.png" />

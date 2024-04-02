@@ -30,12 +30,12 @@ function page({params}) {
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@dharmicdialogue" />
 <meta name="twitter:creator" content="@dharmicdialogue"/>
-<meta name="twitter:url" content={'https://dharmicdialogue.vercel.app/post/'+item?.slug} />
+<meta name="twitter:url" content={'https://dharmicdialogue.com/post/'+item?.slug} />
 <meta name="twitter:title" content={item?.title} />
 <meta name="twitter:description" content={item?.description} />
 <meta name="twitter:image" content={item?.banner?.url} />
 <meta name="twitter:image:src" content={item?.banner?.url} />
-<meta property="og:url" content={'https://dharmicdialogue.vercel.app/post/'+item?.slug} />
+<meta property="og:url" content={'https://dharmicdialogue.com/post/'+item?.slug} />
 <meta property="og:title" content={item?.title} />
 <meta property="og:description" content={item?.description} />
 <meta property="og:image" content={item?.banner?.url} />
@@ -87,10 +87,10 @@ function page({params}) {
 												</div>
 												<div className="post-share">
 													<ul>
-														<li className="facebook"><a href={'https://www.facebook.com/sharer.php?u=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i className="fa fa-facebook"></i></a></li>
-														<li className="twitter"><a href={'https://twitter.com/intent/tweet?url=https://dharmicdialogue.vercel.app/post/'+item?.slug+'&text='+item?.title} target='_blank'><i className="fa fa-twitter"></i></a></li>
-														<li className="whatsapp"><a href={'https://api.whatsapp.com/send?text='+item?.title+' | https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i className="fa fa-whatsapp"></i></a></li>
-														<li className="linkedin"><a href={'https://www.linkedin.com/shareArticle?url=https://dharmicdialogue.vercel.app/post/'+item?.slug} target='_blank'><i className="fa fa-linkedin"></i></a></li>
+														<li className="facebook"><a href={'https://www.facebook.com/sharer.php?u=https://dharmicdialogue.com/post/'+item?.slug} target='_blank'><i className="fa fa-facebook"></i></a></li>
+														<li className="twitter"><a href={'https://twitter.com/intent/tweet?url=https://dharmicdialogue.com/post/'+item?.slug+'&text='+item?.title} target='_blank'><i className="fa fa-twitter"></i></a></li>
+														<li className="whatsapp"><a href={'https://api.whatsapp.com/send?text='+item?.title+' | https://dharmicdialogue.com/post/'+item?.slug} target='_blank'><i className="fa fa-whatsapp"></i></a></li>
+														<li className="linkedin"><a href={'https://www.linkedin.com/shareArticle?url=https://dharmicdialogue.com/post/'+item?.slug} target='_blank'><i className="fa fa-linkedin"></i></a></li>
 													</ul>
 												</div>
 											</div>

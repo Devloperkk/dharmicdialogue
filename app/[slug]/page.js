@@ -41,12 +41,12 @@ function Category({params}) {
 										<meta name="twitter:card" content="summary_large_image" />
 										<meta name="twitter:site" content="@dharmicdialogue" />
 										<meta name="twitter:creator" content="@dharmicdialogue"/>
-										<meta name="twitter:url" content={'https://dharmicdialogue.vercel.app/post/'+item?.slug} />
+										<meta name="twitter:url" content={'https://dharmicdialogue.com/post/'+item?.slug} />
 										<meta name="twitter:title" content={item?.category+'| Dharmic Dialogue'} />
 										<meta name="twitter:description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
 										<meta name="twitter:image" content="/banner.png" />
 										<meta name="twitter:image:src" content="/banner.png" />
-										<meta property="og:url" content={'https://dharmicdialogue.vercel.app/post/'+item?.slug} />
+										<meta property="og:url" content={'https://dharmicdialogue.com/post/'+item?.slug} />
 										<meta property="og:title" content={item?.category+'| Dharmic Dialogue'} />
 										<meta property="og:description" content="The Dharmic Dialogue is your destination to explore diverse perspectives on various topics through the lens of Dharmikta or the indigenous perspective, without being swayed by Western thought processes. Dive into insightful opinions and essays, and if you wish to stay informed, join our community and subscribe to our newsletter." />
 										<meta property="og:image" content="/banner.png" /> */}
